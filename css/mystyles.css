@@ -1,0 +1,176 @@
+/* This is file custom css for theme
+ * Author: Nhat Nguyen
+ * Email: nhat@cesoftvn.com
+ */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+.header #page-nav {
+  background-color: #fff;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center; }
+  .header #page-nav .row {
+    padding: 13px 0; }
+  .header #page-nav ul {
+    margin: 0; }
+    .header #page-nav ul li {
+      padding: 0 10px;
+      border-right: 1px solid #d4202f; }
+    .header #page-nav ul li:last-child {
+      border: none; }
+  .header #page-nav a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 15pt;
+    text-transform: uppercase;
+    color: #d4202f;
+    text-decoration: none; }
+
+section.top {
+  background-image: url(../images/bg-main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  min-height: 610px; }
+  section.top h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 40pt;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: -10px;
+    color: #fff; }
+  section.top h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 16pt;
+    text-transform: uppercase;
+    color: #fff; }
+  section.top .content-top {
+    width: 65%;
+    margin-left: 18%; }
+    section.top .content-top p {
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 13pt;
+      padding-top: 30px; }
+  section.top img.eagle1 {
+    max-width: 100% !important;
+    height: auto; }
+
+.download {
+  background: #e7af23;
+  padding-top: 10px;
+  padding-bottom: 25px; }
+  .download h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 40pt;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0; }
+  .download h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 16pt;
+    text-transform: uppercase;
+    color: #000000;
+    padding-bottom: 30px;
+    width: 55%;
+    margin-left: 22%; }
+  .download button {
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    background: #c32e36;
+    padding: 10px 70px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 17pt;
+    border: none !important;
+    box-shadow: 0px 1px #999; }
+
+.video {
+  padding-bottom: 40px; }
+  .video h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 40pt;
+    text-transform: uppercase;
+    color: #c32e36;
+    margin-top: 25px;
+    margin-bottom: 35px; }
+
+.contact {
+  background: #cbcbcb;
+  padding-top: 10px;
+  padding-bottom: 40px; }
+  .contact h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 40pt;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 35px; }
+  .contact p {
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 13pt;
+    width: 40%;
+    margin-left: 30%; }
+  .contact .form-group {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .contact .form-control {
+    margin-left: 35%;
+    display: block;
+    width: 30%;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 0; }
+  .contact button {
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    background: #e7af23;
+    padding: 10px 70px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 17pt;
+    border: none !important;
+    box-shadow: 2px 2px 2px #999; }
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center; }
+  .footer .row {
+    padding: 13px 0; }
+  .footer ul {
+    margin: 0; }
+    .footer ul li {
+      padding: 0 10px;
+      border-right: 1px solid #fff; }
+    .footer ul li:last-child {
+      border: none; }
+  .footer a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 15pt;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none; }
+
+@media (min-width: 300px) and (max-width: 678px) {
+  .top h1, .download h1, .video h1, .contact h1 {
+    font-size: 25pt; }
+  .top h3, .download h3, .video h3, .contact h3 {
+    font-size: 13; }
+
+  .top .content-top p {
+    font-size: 10pt; } }

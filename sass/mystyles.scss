@@ -1,0 +1,182 @@
+/* This is file custom css for theme
+ * Author: Nhat Nguyen
+ * Email: nhat@cesoftvn.com
+ */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@mixin main-font($font-weight,$font-size){
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    text-transform: uppercase;
+ }
+ @mixin cus-btn($color){
+        font-family: 'Roboto Condensed';
+        font-weight: 400;
+        background: $color;
+        padding: 10px 70px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 17pt;
+        border: none !important;
+ }
+.header #page-nav {
+    background-color: #fff;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    .row{
+        padding: 13px 0;
+    }
+    ul{
+        margin: 0;
+        li{
+            padding:0 10px;
+            border-right: 1px solid #d4202f;
+        }
+        li:last-child{
+            border:none;
+        }
+    }
+    a{
+        @include main-font(400,15pt);
+        color: #d4202f;
+        text-decoration: none;
+    }
+}
+section.top{
+    background-image:url(../images/bg-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    min-height: 610px;
+        h1{
+             @include main-font(300,40pt);
+             margin-top: 25px;
+             margin-bottom: -10px;
+             color: #fff;
+        }
+        h3{
+            @include main-font(300, 16pt);
+            color: #fff;
+        }
+    .content-top{
+        width: 65%;
+        margin-left: 18%;
+        p{
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 13pt;
+            padding-top: 30px;
+        }
+    }
+    img.eagle1{
+        max-width: 100% !important;
+        height: auto;
+    }
+}
+.download{
+    background: #e7af23;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    h1{
+       @include main-font(300, 40pt);
+       color: #fff;
+        margin-bottom: 0;
+    }
+    h3{
+        @include main-font(300,16pt);
+       color: #000000;
+       padding-bottom: 30px;
+       width: 55%;
+        margin-left: 22%;
+    }
+    button{
+        @include cus-btn(#c32e36);
+        box-shadow: 0px 1px #999;
+
+    }
+}
+.video{
+    padding-bottom: 40px;
+    h1{
+         @include main-font(300, 40pt);
+         color: #c32e36;
+         margin-top: 25px;
+         margin-bottom: 35px;
+    }
+}
+.contact{
+    background: #cbcbcb;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    h1{
+        @include main-font(300, 40pt);
+         color: #000;
+         margin-bottom: 35px;
+    }
+    p{
+        color: #000;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 13pt;
+        width: 40%;
+        margin-left: 30%;
+    }
+    .form-group{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .form-control {
+    margin-left: 35%;
+    display: block;
+    width: 30%;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 0;
+    }
+    button{
+        @include cus-btn(#e7af23);
+        box-shadow: 2px 2px 2px #999;
+    }
+}
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    .row{
+        padding: 13px 0;
+    }
+    ul{
+        margin: 0;
+        li{
+            padding:0 10px;
+            border-right: 1px solid #fff;
+        }
+        li:last-child{
+            border:none;
+        }
+    }
+    a{
+        @include main-font(400,15pt);
+        color: #fff;
+        text-decoration: none;
+    }
+}
+@media (min-width : 300px) and (max-width: 678px) {
+    .top,.download,.video,.contact{
+        h1{  font-size: 25pt}
+        h3{ font-size: 13}
+}
+    .top .content-top{
+        p{
+            font-size: 10pt;
+        }
+    }
+}
