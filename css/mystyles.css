@@ -1,6 +1,7 @@
 /* This is file custom css for theme
- * Author: Nhat Nguyen
+ * Author: Nguyen Ba Nhat
  * Email: nhat@cesoftvn.com
+ * Welcome to new desing on Patheon
  */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
@@ -28,14 +29,14 @@
     color: #d4202f;
     text-decoration: none; }
 
-section.top {
+.top {
   background-image: url(../images/bg-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   max-width: 100%;
   min-height: 610px; }
-  section.top h1 {
+  .top h1 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
     font-size: 40pt;
@@ -43,22 +44,22 @@ section.top {
     margin-top: 25px;
     margin-bottom: -10px;
     color: #fff; }
-  section.top h3 {
+  .top h3 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
     font-size: 16pt;
     text-transform: uppercase;
     color: #fff; }
-  section.top .content-top {
-    width: 65%;
-    margin-left: 18%; }
-    section.top .content-top p {
+  .top .content-top {
+    width: 63%;
+    margin-left: 19%;
+    padding-top: 30px; }
+    .top .content-top p {
       color: #fff;
       font-family: 'Lato', sans-serif;
       font-weight: 400;
-      font-size: 13pt;
-      padding-top: 30px; }
-  section.top img.eagle1 {
+      font-size: 13pt; }
+  .top img.eagle1 {
     max-width: 100% !important;
     height: auto; }
 
@@ -95,6 +96,8 @@ section.top {
 
 .video {
   padding-bottom: 40px; }
+  .video img {
+    max-width: 100%; }
   .video h1 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
@@ -145,10 +148,7 @@ section.top {
 
 .footer {
   background-color: #000;
-  color: #fff;
-  padding-top: 0;
-  padding-bottom: 0;
-  text-align: center; }
+  color: #fff; }
   .footer .row {
     padding: 13px 0; }
   .footer ul {
@@ -156,21 +156,72 @@ section.top {
     .footer ul li {
       padding: 0 10px;
       border-right: 1px solid #fff; }
+      .footer ul li a {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 15pt;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none; }
     .footer ul li:last-child {
       border: none; }
-  .footer a {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;
-    font-size: 15pt;
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none; }
 
-@media (min-width: 300px) and (max-width: 678px) {
+@media (min-width: 769px) and (max-width: 1200px) {
+  .contact p {
+    width: 100%;
+    margin: 0; }
+  .contact .form-control {
+    width: 40%;
+    margin-left: 30%; } }
+@media (max-width: 768px) {
+  .header #page-nav a, .footer ul li a {
+    font-size: 13pt; }
+
   .top h1, .download h1, .video h1, .contact h1 {
     font-size: 25pt; }
   .top h3, .download h3, .video h3, .contact h3 {
-    font-size: 13; }
+    font-size: 14pt; }
+
+  .top .content-top {
+    width: 100%;
+    margin: 0;
+    padding-top: 60px;
+    font-size: 12pt; }
+
+  .download h3 {
+    width: 100%;
+    margin: 0;
+    padding-top: 10px; }
+
+  .video {
+    padding-bottom: 20px; }
+    .video h1 {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+
+  .download button, .contact button {
+    padding: 5px 10px;
+    font-size: 12pt; }
+
+  .contact p {
+    width: 100%;
+    margin: 0; }
+  .contact .form-control {
+    width: 50%;
+    margin-left: 24%; } }
+@media (max-width: 500px) {
+  .header #page-nav a, .footer ul li a {
+    font-size: 10pt; }
+
+  .top h1, .download h1, .video h1, .contact h1 {
+    font-size: 18pt; }
+  .top h3, .download h3, .video h3, .contact h3 {
+    font-size: 11pt; }
 
   .top .content-top p {
-    font-size: 10pt; } }
+    font-size: 10pt;
+    padding-top: 50px; }
+
+  .contact .form-control {
+    width: 70%;
+    margin-left: 15%; } }
